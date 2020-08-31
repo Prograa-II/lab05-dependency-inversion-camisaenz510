@@ -6,10 +6,15 @@
 #define LAB05_DEPENDENCY_INVERSION_SOLUTION_CHECKSENDER_H
 
 #include <string>
+#include "Interface.h"
 
 class CheckSender{
+private:
+    Interface *interface;
 public:
+    CheckSender(Interface *interface);
     std::string sendPayment() const;
+    ~CheckSender();
 };
 
 

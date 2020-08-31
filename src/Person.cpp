@@ -52,3 +52,15 @@ std::string Person::processPaymentCheck() {
     CheckSender checkSender;
     return checkSender.sendPayment();
 }
+
+std::string Person::PayCheckSender() {
+    return std::string();
+}
+
+std::string Person::PayCashSender() {
+    return std::string();
+}
+
+std::string Person::PayBankTransfer() {
+    return std::string();
+}

@@ -7,3 +7,14 @@
 std::string CheckSender::sendPayment() const {
     return "Sending the check with the money";
 }
+
+CheckSender::CheckSender(Interface *interface) {
+    this->interface=interface;
+}
+
+CheckSender::~CheckSender() {
+    delete interface;
+
+}
+
+

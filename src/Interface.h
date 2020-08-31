@@ -14,7 +14,10 @@
 //All
 class Interface {
 public:
-    virtual void Pay()=0;
+    virtual std::string PayCheckSender()=0;
+    virtual std::string PayCashSender()=0;
+    virtual std::string PayBankTransfer()=0;
+    ~Interface();
 };
 
 

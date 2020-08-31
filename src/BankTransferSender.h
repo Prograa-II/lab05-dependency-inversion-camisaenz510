@@ -7,10 +7,15 @@
 
 
 #include <string>
+#include "Interface.h"
 
 class BankTransferSender  {
+private:
+    Interface *interface;
 public:
+    BankTransferSender(Interface *interface);
     std::string sendPayment() const;
+    ~BankTransferSender();
 };
 
 
