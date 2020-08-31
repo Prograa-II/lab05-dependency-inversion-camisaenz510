@@ -11,6 +11,12 @@
  * Abstract Class of Person
  */
 class Person {
+
+private:
+    std::string firstName;
+    std::string lastName;
+    int documentId;
+
 public:
 
     // Constructors
@@ -36,10 +42,7 @@ public:
     std::string processPaymentCheck();
 
     virtual std::string toString() const; // Virtual
-private:
-    std::string firstName;
-    std::string lastName;
-    int documentId;
+
 };
 
 #endif //UNIT_TESTING_01_BASIC_PERSON_H
