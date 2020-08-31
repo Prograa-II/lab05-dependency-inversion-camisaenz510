@@ -13,7 +13,8 @@ private:
     Interface *interface;
 public:
     CashSender(Interface *interface);
-    std::string sendPayment() const;
+   // std::string sendPayment() const;
+   bool success(bool reply);
     ~CashSender();
 };
 

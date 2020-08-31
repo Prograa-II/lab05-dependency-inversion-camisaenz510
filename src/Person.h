@@ -34,9 +34,9 @@ public:
     int getDocumentId() const;
     void setDocumentId(int documentId);
 
-    std::string processPaymentBankTransfer();
-    std::string processPaymentCash();
-    std::string processPaymentCheck();
+    //std::string processPaymentBankTransfer();
+    //std::string processPaymentCash();
+    //std::string processPaymentCheck();
 
     std::string PayCheckSender() override;
     std::string PayCashSender() override;

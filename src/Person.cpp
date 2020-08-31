@@ -38,29 +38,29 @@ std::string Person::toString() const {
     return getFirstName() + " " + getLastName() + "\nDoc Id: " + std::to_string(getDocumentId());
 }
 
-std::string Person::processPaymentBankTransfer() {
-    BankTransferSender bankTransferSender;
-    return bankTransferSender.sendPayment();
-}
+//std::string Person::processPaymentBankTransfer() {
+    //BankTransferSender bankTransferSender;
+    //return bankTransferSender.sendPayment();
+//}
 
-std::string Person::processPaymentCash() {
-    CashSender cashSender;
-    return cashSender.sendPayment();
-}
+//std::string Person::processPaymentCash() {
+    //CashSender cashSender;
+    //return cashSender.sendPayment();
+//}
 
-std::string Person::processPaymentCheck() {
-    CheckSender checkSender;
-    return checkSender.sendPayment();
-}
+//std::string Person::processPaymentCheck() {
+    //CheckSender checkSender;
+    //return checkSender.sendPayment();
+//}
 
 std::string Person::PayCheckSender() {
-    return std::string();
+    return "Sending the check with the money";
 }
 
 std::string Person::PayCashSender() {
-    return std::string();
+    return "Give the money in the hands";
 }
 
 std::string Person::PayBankTransfer() {
-    return std::string();
+    return "Sending the money by transference";
 }

@@ -14,7 +14,8 @@ private:
     Interface *interface;
 public:
     BankTransferSender(Interface *interface);
-    std::string sendPayment() const;
+    //std::string sendPayment() const;
+    bool success(bool reply);
     ~BankTransferSender();
 };
 

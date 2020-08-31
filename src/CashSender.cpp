@@ -4,9 +4,9 @@
 
 #include "CashSender.h"
 
-std::string CashSender::sendPayment() const {
-    return "Give the money in the hands";
-}
+//std::string CashSender::sendPayment() const {
+//    return "Give the money in the hands";
+//}
 
 CashSender::CashSender(Interface *interface) {
     this->interface=interface;
@@ -15,3 +15,11 @@ CashSender::CashSender(Interface *interface) {
 CashSender::~CashSender() {
     delete interface;
 }
+
+bool CashSender::success(bool reply) {
+        if(reply==true){
+            interface->PayCashSender();
+            return true;
+        }else return false;
+    }
+
