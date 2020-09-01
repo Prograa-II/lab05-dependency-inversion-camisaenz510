@@ -11,7 +11,7 @@
 /**
  * Abstract Class of Person
  */
-class Person: public Interface{
+class Person{
 
 private:
     std::string firstName;
@@ -38,12 +38,8 @@ public:
     //std::string processPaymentCash();
     //std::string processPaymentCheck();
 
-    std::string PayCheckSender() override;
-    std::string PayCashSender() override;
-     std::string PayBankTransfer() override;
-
     virtual std::string toString() const; // Virtual
-
+    std::string doThePayment(Interface* payment);
 };
 
 #endif //UNIT_TESTING_01_BASIC_PERSON_H

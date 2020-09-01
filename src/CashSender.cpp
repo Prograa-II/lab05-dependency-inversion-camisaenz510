@@ -8,18 +8,9 @@
 //    return "Give the money in the hands";
 //}
 
-CashSender::CashSender(Interface *interface) {
-    this->interface=interface;
+std::string CashSender::FinalPayment() {
+    return "Give the money in the hands";
 }
 
-CashSender::~CashSender() {
-    delete interface;
-}
 
-bool CashSender::success(bool reply) {
-        if(reply==true){
-            interface->PayCashSender();
-            return true;
-        }else return false;
-    }
 

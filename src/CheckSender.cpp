@@ -8,21 +8,10 @@
   //  return "Sending the check with the money";
 //}
 
-CheckSender::CheckSender(Interface *interface) {
-    this->interface=interface;
+std::string CheckSender::FinalPayment() {
+    return "Sending the check with the money";
 }
 
-CheckSender::~CheckSender() {
-    delete interface;
-
-}
-
-bool CheckSender::success(bool reply) {
-        if(reply==true){
-            interface->PayCheckSender();
-            return true;
-        }else return false;
-    }
 
 
 

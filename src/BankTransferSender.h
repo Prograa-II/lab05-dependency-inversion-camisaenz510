@@ -9,12 +9,10 @@
 #include <string>
 #include "Interface.h"
 
-class BankTransferSender  {
-private:
-    Interface *interface;
+class BankTransferSender: public Interface {
+
 public:
-    BankTransferSender(Interface *interface);
-    //std::string sendPayment() const;
+    std::string FinalPayment() override; //con el const da error
     bool success(bool reply);
     ~BankTransferSender();
 };

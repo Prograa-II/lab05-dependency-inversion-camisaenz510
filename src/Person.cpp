@@ -38,6 +38,10 @@ std::string Person::toString() const {
     return getFirstName() + " " + getLastName() + "\nDoc Id: " + std::to_string(getDocumentId());
 }
 
+std::string Person::doThePayment(Interface *payment) {
+    return payment->FinalPayment();
+}
+
 //std::string Person::processPaymentBankTransfer() {
     //BankTransferSender bankTransferSender;
     //return bankTransferSender.sendPayment();
@@ -53,14 +57,3 @@ std::string Person::toString() const {
     //return checkSender.sendPayment();
 //}
 
-std::string Person::PayCheckSender() {
-    return "Sending the check with the money";
-}
-
-std::string Person::PayCashSender() {
-    return "Give the money in the hands";
-}
-
-std::string Person::PayBankTransfer() {
-    return "Sending the money by transference";
-}

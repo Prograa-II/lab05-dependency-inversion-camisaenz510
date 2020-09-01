@@ -8,13 +8,11 @@
 #include <string>
 #include"Interface.h"
 
-class CashSender {
-private:
-    Interface *interface;
+class CashSender: public Interface{
+
 public:
-    CashSender(Interface *interface);
    // std::string sendPayment() const;
-   bool success(bool reply);
+   std::string FinalPayment() override;
     ~CashSender();
 };
 
