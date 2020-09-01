@@ -11,7 +11,7 @@
 class CashSender: public Interface{
 
 public:
-   // std::string sendPayment() const;
+
    std::string FinalPayment() override;
     ~CashSender();
 };

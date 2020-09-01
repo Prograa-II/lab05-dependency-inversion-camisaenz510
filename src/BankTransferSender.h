@@ -13,7 +13,6 @@ class BankTransferSender: public Interface {
 
 public:
     std::string FinalPayment() override; //con el const da error
-    bool success(bool reply);
     ~BankTransferSender();
 };
 

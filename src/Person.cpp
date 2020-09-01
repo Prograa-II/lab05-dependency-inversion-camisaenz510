@@ -42,18 +42,3 @@ std::string Person::doThePayment(Interface *payment) {
     return payment->FinalPayment();
 }
 
-//std::string Person::processPaymentBankTransfer() {
-    //BankTransferSender bankTransferSender;
-    //return bankTransferSender.sendPayment();
-//}
-
-//std::string Person::processPaymentCash() {
-    //CashSender cashSender;
-    //return cashSender.sendPayment();
-//}
-
-//std::string Person::processPaymentCheck() {
-    //CheckSender checkSender;
-    //return checkSender.sendPayment();
-//}
-
